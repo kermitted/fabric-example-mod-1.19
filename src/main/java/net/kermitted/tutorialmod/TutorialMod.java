@@ -1,6 +1,7 @@
 package net.kermitted.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.kermitted.tutorialmod.block.ModBlocks;
 import net.kermitted.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,5 +15,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
